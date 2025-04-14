@@ -1,5 +1,4 @@
 # News-Headlines-Aggregator
-# Simple News Headlines Aggregator
 
 A Python-based command-line tool and Jupyter/Colab notebook to fetch and aggregate the latest news headlines from multiple configurable online sources.
 
@@ -33,10 +32,9 @@ This tool is intended for:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/your-username/simple-news-aggregator.git](https://github.com/your-username/simple-news-aggregator.git)
-    cd simple-news-aggregator
+    git clone https://github.com/AnjanVankayala/News-Headlines-Aggregator.git
+    cd news-headlines-aggregator
     ```
-    (Replace `your-username/simple-news-aggregator` with the actual repository URL)
 
 2.  **Set up a Virtual Environment (Recommended):**
     ```bash
@@ -61,7 +59,7 @@ This tool is intended for:
 This is the **most crucial step** for the aggregator to work correctly.
 
 * Before running the script/notebook for the first time, you need to create or verify the `config.json` file in the project's root directory.
-* The notebook (`News_Aggregator.ipynb`) includes a cell that defines sample configuration data (`config_data`) and writes it to `config.json`. **You must run this cell.**
+* The notebook (`News_Headlines_Aggregator.ipynb`) includes a cell that defines sample configuration data (`config_data`) and writes it to `config.json`. **You must run this cell.**
 * **IMPORTANT:** The CSS selectors (`selector` field in the JSON) are highly dependent on the target website's HTML structure and **will break** when websites update their design. You **must** manually inspect the HTML of each news source you want to use (using your browser's developer tools - Right Click -> Inspect Element on a headline) and update the `selector` value accordingly.
 
     **Example `config.json` Structure:**
@@ -87,7 +85,7 @@ This is the **most crucial step** for the aggregator to work correctly.
 
 **2. Running the Aggregator (Using the Notebook)**
 
-* **IPython Notebook (`News_Aggregator.ipynb`):**
+* **IPython Notebook (`News_Headlines_Aggregator.ipynb`):**
     * Open the `.ipynb` file using Jupyter Notebook, JupyterLab, or VS Code with Python extensions.
     * Run the cells sequentially:
         1.  Install dependencies (`!pip install...`).
